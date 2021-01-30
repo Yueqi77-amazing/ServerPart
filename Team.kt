@@ -55,7 +55,7 @@ class Team constructor(name:String, password: String, adminId: String) : Partici
 
     fun kickMember(user:User){
         removeMember(user.userId)
-        user.teamList.remove(teamId)
+        user.removeTeam(teamId)
     }
 
     fun checkAdmin(admin:User): Boolean{
